@@ -21,10 +21,13 @@ function App() {
     document.querySelector('html').classList.add(theme);
   } , [theme])
 
+  // bg-gradiants 
+  // bg-gradient-to-r from-slate-300 to-slate-500
+  // bg-gradient-to-r from-fuchsia-600 to-purple-600 
 
   return (
     <ThemeProvider value={{theme, darkTheme, lightTheme}}>
-      <div className="flex flex-wrap min-h-screen items-center">
+      <div className="bg-gradient-to-r from-slate-300 to-slate-500 flex flex-wrap h-screen w-screen items-center overflow-auto">
         <div className="w-full">
           <div className="w-full max-w-sm mx-auto flex justify-end mb-4">
             <ThemeBtn/>
