@@ -10,5 +10,5 @@ export const ThemeProvider = ThemeContext.Provider
 
     // creating Custom Hook
 export default function useTheme(){
-    return useContext(ThemeProvider);
+    return useContext(ThemeContext);
 }
